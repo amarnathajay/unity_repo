@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite errors="1" failures="0" name="unittest.suite.TestSuite" tests="1" time="78.186">
+  <testcase classname="rostest.runner.RosTest" name="testtest56" time="78.1860">
+    <error type="RLTestTimeoutException">max time [60.0s] allotted for test [test56] of type [pathfinder/test56]
+  File "/usr/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rostest/runner.py", line 148, in fn
+    self.test_parent.run_test(test)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rostest/rostest_parent.py", line 132, in run_test
+    return self.runner.run_test(test)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/roslaunch/launch.py", line 681, in run_test
+    (test.time_limit, test.test_name, test.package, test.type))
+    </error>
+  </testcase>
+  <system-out><![CDATA[[ROSTEST]setup[/home/ece446/mal/FinalRelease/src/pathfinder/test/test56launch.test] run_id[1a5fecc0-305b-11e7-b928-000c295a6b65] starting
+?[1mstarted roslaunch server http://catvehicle160519.local:44415/?[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /catvehicle/distanceEstimator/scan_topic: /catvehicle/front...
+ * /catvehicle/front_left_steering_position_controller/joint: front_left_steeri...
+ * /catvehicle/front_left_steering_position_controller/pid/d: 10.0
+ * /catvehicle/front_left_steering_position_controller/pid/i: 0.01
+ * /catvehicle/front_left_steering_position_controller/pid/p: 100.0
+ * /catvehicle/front_left_steering_position_controller/type: position_controll...
+ * /catvehicle/front_right_steering_position_controller/joint: front_right_steer...
+ * /catvehicle/front_right_steering_position_controller/pid/d: 10.0
+ * /catvehicle/front_right_steering_position_controller/pid/i: 0.01
+ * /catvehicle/front_right_steering_position_controller/pid/p: 100.0
+ * /catvehicle/front_right_steering_position_controller/type: position_controll...
+ * /catvehicle/joint1_velocity_controller/joint: back_left_wheel_j...
+ * /catvehicle/joint1_velocity_controller/pid/d: 10.0
+ * /catvehicle/joint1_velocity_controller/pid/i: 0.01
+ * /catvehicle/joint1_velocity_controller/pid/p: 100.0
+ * /catvehicle/joint1_velocity_controller/type: velocity_controll...
+ * /catvehicle/joint2_velocity_controller/joint: back_right_wheel_...
+ * /catvehicle/joint2_velocity_controller/pid/d: 10.0
+ * /catvehicle/joint2_velocity_controller/pid/i: 0.01
+ * /catvehicle/joint2_velocity_controller/pid/p: 100.0
+ * /catvehicle/joint2_velocity_controller/type: velocity_controll...
+ * /catvehicle/joint_state_controller/publish_rate: 50
+ * /catvehicle/joint_state_controller/type: joint_state_contr...
+ * /catvehicle/robot_description: <?xml version="1....
+ * /catvehicle/tf_prefix: catvehicle
+ * /rosdistro: indigo
+ * /rosversion: 1.11.19
+ * /use_sim_time: True
+
+NODES
+  /catvehicle/
+    base_link2slamodom_tf_catvehicle (tf/static_transform_publisher)
+    cmdvel2gazebocatvehicle (catvehicle/cmdvel2gazebo.py)
+    controller_spawnercatvehicle (controller_manager/spawner)
+    distanceEstimator (catvehicle/distanceEstimator)
+    joint_state_publishercatvehicle (joint_state_publisher/joint_state_publisher)
+    obstacleStoppercatvehicle (obstaclestopper/obstaclestopper_node)
+    odom2pathcatvehicle (catvehicle/odom2path.py)
+    robot_state_publishercatvehicle (robot_state_publisher/robot_state_publisher)
+    urdf_spawnercatvehicle (gazebo_ros/spawn_model)
+  /
+    default_controller (catvehicle_hoffmannfollower/catvehicle_hoffmannfollower_node)
+    gazebo (gazebo_ros/gzserver)
+    odom2poseconverter (odom2pose/odom2pose.py)
+    task3_stopper (stopafterdistance/stopafterdistance_node)
+
+[ROSTEST]setup[/home/ece446/mal/FinalRelease/src/pathfinder/test/test56launch.test] run_id[1a5fecc0-305b-11e7-b928-000c295a6b65] done
+[ROSTEST]Running test [test56]
+?[1mROS_MASTER_URI=http://catvehicle160519.local:32873/?[0m
+?[1msetting /run_id to 1a5fecc0-305b-11e7-b928-000c295a6b65?[0m
+?[1mprocess[rosout-1]: started with pid [27097]?[0m
+started core service [/rosout]
+?[1mprocess[gazebo-2]: started with pid [27100]?[0m
+?[1mprocess[catvehicle/urdf_spawnercatvehicle-3]: started with pid [27104]?[0m
+?[1mprocess[catvehicle/controller_spawnercatvehicle-4]: started with pid [27105]?[0m
+?[1mprocess[catvehicle/robot_state_publishercatvehicle-5]: started with pid [27106]?[0m
+?[1mprocess[catvehicle/joint_state_publishercatvehicle-6]: started with pid [27108]?[0m
+?[1mprocess[catvehicle/base_link2slamodom_tf_catvehicle-7]: started with pid [27114]?[0m
+?[1mprocess[catvehicle/cmdvel2gazebocatvehicle-8]: started with pid [27123]?[0m
+?[1mprocess[catvehicle/distanceEstimator-9]: started with pid [27126]?[0m
+?[1mprocess[catvehicle/obstacleStoppercatvehicle-10]: started with pid [27132]?[0m
+?[1mprocess[catvehicle/odom2pathcatvehicle-11]: started with pid [27138]?[0m
+?[1mprocess[task3_stopper-12]: started with pid [27144]?[0m
+?[1mprocess[default_controller-13]: started with pid [27150]?[0m
+?[1mprocess[odom2poseconverter-14]: started with pid [27153]?[0m
+[ROSTEST]running test test56
+?[1mprocess[test56-15]: started with pid [27159]?[0m
+?[1m[catvehicle/urdf_spawnercatvehicle-3] process has finished cleanly
+log file: /home/ece446/.ros/log/1a5fecc0-305b-11e7-b928-000c295a6b65/catvehicle-urdf_spawnercatvehicle-3*.log?[0m
+[ROSTEST]tearDown[/home/ece446/mal/FinalRelease/src/pathfinder/test/test56launch.test]
+shutting down processing monitor...
+[test56-15] killing on exit
+[odom2poseconverter-14] killing on exit
+[default_controller-13] killing on exit
+[task3_stopper-12] killing on exit
+[catvehicle/odom2pathcatvehicle-11] killing on exit
+[catvehicle/obstacleStoppercatvehicle-10] killing on exit
+[catvehicle/distanceEstimator-9] killing on exit
+[catvehicle/cmdvel2gazebocatvehicle-8] killing on exit
+[catvehicle/base_link2slamodom_tf_catvehicle-7] killing on exit
+[catvehicle/joint_state_publishercatvehicle-6] killing on exit
+[catvehicle/robot_state_publishercatvehicle-5] killing on exit
+[catvehicle/controller_spawnercatvehicle-4] killing on exit
+[gazebo-2] killing on exit
+[rosout-1] killing on exit
+... shutting down processing monitor complete
+[ROSTEST]rostest teardown /home/ece446/mal/FinalRelease/src/pathfinder/test/test56launch.test complete
+]]></system-out>
+  <system-err><![CDATA[?[31m[catvehicle/controller_spawnercatvehicle-4] escalating to SIGTERM?[0m
+?[31m[gazebo-2] escalating to SIGTERM?[0m
+?[31m[catvehicle/controller_spawnercatvehicle-4] escalating to SIGKILL?[0m
+?[31mShutdown errors:
+ * process[catvehicle/controller_spawnercatvehicle-4, pid 27105]: required SIGKILL. May still be running.?[0m
+]]></system-err>
+</testsuite>

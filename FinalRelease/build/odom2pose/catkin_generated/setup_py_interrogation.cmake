@@ -1,0 +1,6 @@
+set(odom2pose_SETUP_PY_VERSION "0.0.0")
+set(odom2pose_SETUP_PY_SCRIPTS "")
+set(odom2pose_SETUP_PY_PACKAGES "odom2pose")
+set(odom2pose_SETUP_PY_PACKAGE_DIRS "src/odom2pose")
+set(odom2pose_SETUP_PY_MODULES "")
+set(odom2pose_SETUP_PY_MODULE_DIRS "")

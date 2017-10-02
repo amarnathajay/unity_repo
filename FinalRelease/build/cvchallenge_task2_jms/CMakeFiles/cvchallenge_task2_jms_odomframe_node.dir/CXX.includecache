@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ece446/mal/FinalRelease/src/cvchallenge_task2_jms/src/simplesolution_odomframe.cpp
+ros/ros.h
+/home/ece446/mal/FinalRelease/src/cvchallenge_task2_jms/src/ros/ros.h
+sensor_msgs/LaserScan.h
+/home/ece446/mal/FinalRelease/src/cvchallenge_task2_jms/src/sensor_msgs/LaserScan.h
+geometry_msgs/PolygonStamped.h
+/home/ece446/mal/FinalRelease/src/cvchallenge_task2_jms/src/geometry_msgs/PolygonStamped.h
+tf/transform_listener.h
+-
+tf/transform_datatypes.h
+-
+vector
+-
+cassert
+-
+cstdio
+-
+cstdlib
+-
+

@@ -1,0 +1,8 @@
+prefix=/home/ece446/mal/FinalRelease/install
+
+Name: stopafterdistance
+Description: Description of stopafterdistance
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/ece446/mal/FinalRelease/install/lib 
+Requires: geometry_msgs nav_msgs roscpp std_msgs

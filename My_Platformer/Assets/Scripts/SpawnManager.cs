@@ -8,8 +8,8 @@ public class SpawnManager : MonoBehaviour {
     public GameObject platform;
     public float horizontalMin = 6.5f;
     public float horizontalMax = 14f;
-    public float verticalMin = -6f;
-    public float verticalMax = 6f;
+    public float verticalMin = -5f;
+    public float verticalMax = 5f;
 
     private Vector2 originPosition;
 
@@ -18,8 +18,13 @@ public class SpawnManager : MonoBehaviour {
         originPosition = transform.position;
         Spawn();
 	}
-	
-	void Spawn()
+
+    private void FixedUpdate()
+    {
+        Spawn();
+    }
+
+    void Spawn()
     {
         for(int i = 0; i < maxPlatforms; i++)
         {

@@ -1,0 +1,9 @@
+<launch>
+	<include file="$(find pathfinder)/launch/catvehicle_custom.launch">
+	<arg name="worldfile" value="world_test12.world"/>
+	</include>
+	<node name="task3_stopper" pkg="stopafterdistance" type="stopafterdistance_node"/>
+	<node name="odom2poseconverter" pkg="odom2pose" type="odom2pose.py">
+	</node>	
+	<test test-name="test34_2" pkg="pathfinder" type="test34_2" time-limit="60.0" />
+</launch>

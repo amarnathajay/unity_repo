@@ -1,0 +1,2 @@
+catvehicle:catvehicle_hoffmannfollower:cvchallenge_task2_jms:obstaclestopper:odom2pose:pathfinder:stopafterdistance:ucandoit
+-DCATKIN_DEVEL_PREFIX=/home/ece446/mal/FinalRelease/devel -DCMAKE_INSTALL_PREFIX=/home/ece446/mal/FinalRelease/install -G Unix Makefiles

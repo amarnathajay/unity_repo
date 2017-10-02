@@ -1,0 +1,8 @@
+prefix=/home/ece446/mal/FinalRelease/install
+
+Name: odom2pose
+Description: Description of odom2pose
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ece446/mal/FinalRelease/install/lib 
+Requires: 

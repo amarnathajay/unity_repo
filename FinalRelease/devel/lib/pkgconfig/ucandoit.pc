@@ -1,0 +1,8 @@
+prefix=/home/ece446/mal/FinalRelease/devel
+
+Name: ucandoit
+Description: Description of ucandoit
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/ece446/mal/FinalRelease/devel/lib 
+Requires: geometry_msgs roscpp std_msgs

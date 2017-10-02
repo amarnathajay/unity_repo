@@ -21,5 +21,10 @@ public class DeathTrigger : MonoBehaviour {
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if(collision.gameObject.CompareTag("ground"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

@@ -1,0 +1,17 @@
+<sdf version="1.4">
+<world name="default">
+<include>
+<uri>model://ground_plane</uri>
+<name>ground_plane</name>
+</include>
+<include>
+<uri>model://sun</uri>
+<name>sun</name>
+</include>
+<include>
+<uri>model://house_1</uri>
+<name>house_1</name>
+<pose>20.0 20.0 0 0 0 0</pose>
+</include>
+</world>
+</sdf>

@@ -1,0 +1,17 @@
+<!--
+Author: Ajay Satishkumar Amarnath
+Email: amarnathajay@email.arizona.edu
+-->
+<launch>
+<include file="$(find pathfinder)/launch/catvehicle_custom.launch">
+<arg name="worldfile" value="world5.world"/>
+</include>
+
+<node name="task3_stopper" pkg="stopafterdistance" type="stopafterdistance_node"/>
+<!--<node name="default_controller" pkg="catvehicle_hoffmannfollower" type="catvehicle_hoffmannfollower_node">-->
+<!--<remap from="/catvehicle/cmd_vel" to="/catvehicle/cmd_vel_task4"/>
+</node>-->
+<node name="task3_ucandoit" pkg="ucandoit" type="ucandoit_node"/>
+<node name="task2_solution" pkg="pathfinder" type="detections"/>
+<!--<node name="task3_solution" pkg="cvchallenge_task3" type="cvchallenge_task3_node"/>-->
+</launch>

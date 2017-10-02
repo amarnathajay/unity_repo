@@ -1,0 +1,8 @@
+prefix=/home/ece446/mal/FinalRelease/install
+
+Name: cvchallenge_task2_jms
+Description: Description of cvchallenge_task2_jms
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ece446/mal/FinalRelease/install/lib 
+Requires: 

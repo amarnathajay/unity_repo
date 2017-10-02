@@ -1,0 +1,25 @@
+<!--
+Author: Ajay Satishkumar Amarnath
+Email: amarnathajay@email.arizona.edu
+-->
+<launch>
+
+	<!--Remapping the publisher from /turtle1/cmd_vel to /catvehicle/cmd_vel-->
+	<!--<remap from="/turtle1/cmd_vel" to="/catvehicle/cmd_vel" />-->
+
+	<!--Run the odom2pose node to convert the /catvehicle/odom values to /turtle1/pose values-->
+	<node name="odom2poseconverter" pkg="odom2pose" type="odom2pose.py">
+	</node>	
+
+
+
+	<node name="pathfinder" pkg="pathfinder" type="pathfinder_node" output="screen"/>
+
+<!--<node name="task3_stopper" pkg="stopafterdistance" type="stopafterdistance_node"/>
+<node name="default_controller" pkg="catvehicle_hoffmannfollower" type="catvehicle_hoffmannfollower_node">
+<remap from="/catvehicle/cmd_vel" to="/catvehicle/cmd_vel_task4"/>
+</node>
+<node name="task3_ucandoit" pkg="ucandoit" type="ucandoit_node"/>
+<node name="task2_solution" pkg="cvchallenge_task2_jms" type="cvchallenge_task2_jms_node"/>
+<node name="task3_solution" pkg="cvchallenge_task3" type="cvchallenge_task3_node"/>-->
+</launch>

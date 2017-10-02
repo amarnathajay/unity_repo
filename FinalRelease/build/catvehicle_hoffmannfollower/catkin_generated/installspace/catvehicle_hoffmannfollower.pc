@@ -1,0 +1,8 @@
+prefix=/home/ece446/mal/FinalRelease/install
+
+Name: catvehicle_hoffmannfollower
+Description: Description of catvehicle_hoffmannfollower
+Version: 1.0.1
+Cflags: 
+Libs: -L/home/ece446/mal/FinalRelease/install/lib 
+Requires: geometry_msgs nav_msgs roscpp std_msgs
